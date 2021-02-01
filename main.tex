@@ -1,0 +1,181 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\geometry{letterpaper}
+\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+
+%%%%%%%%%%%%%%%%%%%%
+\newcommand{\hide}[1]{}
+\setcounter{tocdepth}{4}
+\usepackage{natbib}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{mathtools}
+\usepackage[utf8]{inputenc}
+\usepackage{verbatim}
+\usepackage{minted}
+\usepackage{longtable}
+\usepackage[english]{babel}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{array,multirow,graphicx}
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+
+\hide{
+\usepackage{amscd}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{cases}		 
+\usepackage{cutwin}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{epstopdf}
+\usepackage{graphicx}
+\usepackage{ifthen}
+\usepackage{lipsum}
+\usepackage{mathrsfs}	
+\usepackage{multimedia}
+\usepackage{wrapfig}
+}
+\bibliographystyle{humanbio}
+
+\usepackage{caption}
+\usepackage[utf8]{inputenc}
+
+\usepackage{listings}
+\lstset{language=[LaTeX]TeX,breaklines=true} % Word wrap within listings environment
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+% defines code block style 
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+\lstset{style=mystyle,columns=fullflexible}
+
+\newcommand{\itemlist}[1]{\begin{itemize}#1\end{itemize}}
+\newcommand{\enumlist}[1]{\begin{enumerate}#1\end{enumerate}}
+\newcommand{\desclist}[1]{\begin{description}#1\end{description}}
+\newcommand\tab[1][0.5cm]{\hspace*{#1}}
+
+\newcommand{\Answer}[1]{\begin{quote}{\color{blue}#1}\end{quote}}
+\newcommand{\AND}{\wedge}
+\newcommand{\OR}{\vee}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\lra}{\leftrightarrow}
+
+\title {{\bf ECE 569 Spring 2021 Project Proposal} \\
+\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}} \\
+\large{Hardware Accelerated McEliece Cryptosystem}
+}
+
+\author{Mitchell Dzurick - $mitchdz@email.arizona.edu$ \\ Mitchell Russel - \\ James Kuban \\ Group $\#$ }
+\date{\today}
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+\listoffigures
+\listoftables
+\clearpage
+
+
+\begin{center}
+    \begin{tabular}{ | m{3.8cm} | m{12cm} | } 
+        \hline
+        Technical Abstract & A statement of why you think the topic is important (Give a set of reasons why this is relevant),  description of the hypothesis, a crisp statement of the hypothesis that you will test. List of project goals (This will be our contract: this is what you promise to do) \\ 
+        \hline
+        Anticipated Benefits & Projects should be designed with a rigorous experimental focus. One of the key project requirements is to improve the performance with applicable optimization techniques and conduct trade-off analysis. \\
+        \hline
+        Keywords &  \\ 
+        \hline
+    \end{tabular}
+\end{center}
+
+
+\section{Identification and significance of the problem or opportunity} \label{Identification and significance of the problem or opportunity}
+    \subsection{Statement of Problem}\label{Statement of Problem}
+        \colorbox{BurntOrange}{SUGGESTED LENGTH: 0.5 pages}
+
+    \subsubsection{Problem Background}\label{Problem Background}
+        \colorbox{BurntOrange}{SUGGESTED LENGTH: 0.5 pages}
+    
+    \subsection{Current Level of Technology}\label{Current Level of Technology}
+        \colorbox{BurntOrange}{SUGGESTED LENGTH: 0.5 pages}
+    
+    \subsection{Limitations of Current Technology}\label{Limitations of Current Technology}
+        \colorbox{BurntOrange}{SUGGESTED LENGTH: 0.5 pages}
+    
+    \subsection{Proposed Solution}\label{Proposed Solution}
+        \colorbox{BurntOrange}{SUGGESTED LENGTH: 0.5 pages}
+    
+    \subsubsection{Background}\label{ Proposed Solution Background}
+        \colorbox{BurntOrange}{SUGGESTED LENGTH: 0.5 pages}
+
+    \subsubsection{Statement of Solution}\label{Statement of Solution}
+        \colorbox{BurntOrange}{SUGGESTED LENGTH: 1.0 pages}
+
+    \subsubsection{How Solution Overcomes Current Technology}\label{How Solution Overcomes Current Technology}
+        \colorbox{BurntOrange}{SUGGESTED LENGTH: 0.5 pages}
+
+    \subsubsection{Validation and Evaluation Strategy}\label{Validation and Evaluation Strategy}
+
+\section{Technical objectives}\label{Technical objectives}
+    \colorbox{BurntOrange}{SUGGESTED LENGTH: ONE PARAGRAPH + BULLET LIST OR TABLE}
+
+
+\subsection{Project Milestones and Tasks}
+\subsubsection{Milestone 1: X}
+\begin{itemize}
+    \item Task Name
+    \item Task Name
+\end{itemize}
+
+
+\subsection{Work Plan Schedule}\label{Work Plan Schedule}
+    \colorbox{BurntOrange}{SUGGESTED LENGTH: 0.5 PAGES}
+
+
+\section{Task Schedule}
+
+\begin{center}
+    \begin{tabular}{ | M{1cm} | M{5cm} | M{1cm} | M{1cm} | M{1cm} | M{1cm} | M{1cm} | M{1cm} | }
+        \hline
+        \textbf{Task} & \textbf{Description} & Week 1 & Week 2 & Week 3 & Week 4 & Week 5 & Week 6 \\
+        \hline
+        &  &  &  &  &  &  & \\
+        \hline
+        &  &  &  &  &  &  & \\
+        \hline
+        &  &  &  &  &  &  & \\
+        \hline
+        &  &  &  &  &  &  & \\
+        \hline
+        &  &  &  &  &  &  & \\
+        \hline
+        & Write Final Report &  &  &  &  &  & \\
+        \hline
+    \end{tabular}
+\end{center}
+
+
+\end{document}
